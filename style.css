@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); /* Importa a fonte Poppins com diferentes pesos */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap'); /* Importa Poppins em itálico e peso 600 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
 
-/* Zera o estilo padrão e define a fonte */
 * {
     margin: 0;
     padding: 0;
@@ -9,22 +8,13 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* Estilização geral do corpo */
 body {
-    min-height: 100vh; /* Altura mínima da tela */
-    background-color: black; /* Fundo preto */
+    min-height: 100vh;
+    background-color: black;
     overflow: auto;
     text-align: center;
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out; /* Efeito fade-in */
 }
 
-/* Classe para exibir o body após o carregamento */
-body.loaded {
-    opacity: 1;
-}
-
-/* Cabeçalho fixo com fundo semitransparente */
 .header {
     position: fixed;
     top: 0;
@@ -38,7 +28,6 @@ body.loaded {
     z-index: 100;
 }
 
-/* Logo no cabeçalho */
 .logo {
     font-size: 2rem;
     color: #fff;
@@ -46,7 +35,6 @@ body.loaded {
     font-weight: 700;
 }
 
-/* Links da navbar */
 .navbar a {
     font-size: 1.3rem;
     color: #fff;
@@ -56,13 +44,11 @@ body.loaded {
     transition: 0.5s;
 }
 
-/* Hover nos links do menu */
 .navbar a:hover {
     font-size: 1.4rem;
-    color: rgb(110, 190, 110); /* Destaque em verde */
+    color: rgb(110, 190, 110);
 }
 
-/* Container para o vídeo de fundo */
 .video-background {
     position: fixed;
     top: 0;
@@ -75,14 +61,12 @@ body.loaded {
     pointer-events: none;
 }
 
-/* Estilo do vídeo de fundo */
 .back-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Container principal do conteúdo */
 .container {
     position: relative;
     z-index: 1;
@@ -92,19 +76,16 @@ body.loaded {
     min-height: 100vh;
 }
 
-/* Título principal */
 .container h1 {
     font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     margin: auto;
 }
 
-/* Texto com destaque verde */
 .nome-verde {
     color: rgb(110, 190, 110);
 }
 
-/* Parágrafos principais */
 .texto1 {
     font-size: 1.4rem;
     text-align: justify;
@@ -115,7 +96,6 @@ body.loaded {
     text-indent: 2em;
 }
 
-/* Container para imagens centralizadas lado a lado */
 .imagem-centralizada {
     display: flex;
     object-fit: cover;
@@ -128,47 +108,40 @@ body.loaded {
     gap: 35px;
 }
 
-/* Estilo das imagens */
 .imagem-centralizada img {
     border-radius: 20px;
     outline: 5px solid rgb(110, 190, 110);
     width: 300px;
 }
 
-/* Classe usada para destacar texto com cor */
 .bio {
     color: rgb(110, 190, 110);
 }
 
-/* Título da seção de carreira */
 .carreira {
     margin-top: 20px;
     font-size: 2.5rem;
     color: rgb(110, 190, 110);
 }
 
-/* Títulos destacados em verde e itálico */
 .titulo-verde {
     font-weight: 600;
     font-style: italic;
     color: rgb(110, 190, 110);
 }
 
-/* Seção do mapa */
 .map-section {
     text-align: center;
     padding: 20px 0;
     color: white;
 }
 
-/* Título do mapa */
 .map-title {
     font-size: 2rem;
     margin-bottom: 15px;
     color: rgb(110, 190, 110);
 }
 
-/* Estilo do iframe de mapa */
 .map-container iframe {
     max-width: 90%;
     height: 450px;
@@ -176,7 +149,6 @@ body.loaded {
     border-radius: 10px;
 }
 
-/* Container dos álbuns */
 .album-container {
     display: flex;
     justify-content: center;
@@ -185,13 +157,11 @@ body.loaded {
     margin-top: 20px;
 }
 
-/* Container individual de cada álbum */
 .album {
     text-align: center;
     margin: 20px;
 }
 
-/* Imagem dos álbuns */
 .album-image {
     width: 300px;
     height: auto;
@@ -200,12 +170,10 @@ body.loaded {
     transition: transform 0.3s ease;
 }
 
-/* Efeito ao passar o mouse na imagem */
 .album-image:hover {
     transform: scale(1.05);
 }
 
-/* Legenda dos álbuns */
 .album-caption {
     margin-top: 10px;
     font-size: 1rem;
@@ -218,7 +186,6 @@ body.loaded {
     text-align: center;
 }
 
-/* Estilo do formulário */
 .formulario {
     width: 80%;
     max-width: 600px;
@@ -229,19 +196,16 @@ body.loaded {
     color: white;
 }
 
-/* Agrupamento de campos do formulário */
 .form-group {
     margin-bottom: 20px;
 }
 
-/* Estilo do rótulo dos campos */
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-/* Campos de entrada e textarea */
 input[type="text"],
 input[type="email"],
 textarea,
@@ -255,17 +219,14 @@ select {
     color: white;
 }
 
-/* Textarea com redimensionamento vertical */
 textarea {
     resize: vertical;
 }
 
-/* Estilo para radio buttons */
 input[type="radio"] {
     margin-right: 10px;
 }
 
-/* Botões de envio */
 input[type="submit"],
 button[type="submit"] {
     background-color: rgb(110, 190, 110);
@@ -280,36 +241,39 @@ button[type="submit"] {
     width: 100%;
 }
 
-/* Efeito hover no botão */
 input[type="submit"]:hover,
 button[type="submit"]:hover {
     background-color: rgb(85, 160, 85);
 }
 
-/* Vídeo extra estilizado */
-.melhormusica video {
+.videofoda video {
     width: 500px;
     border-radius: 20px;
 }
 
-/* Responsividade */
+/* RESPONSIVIDADE */
 @media (max-width: 1024px) {
     .header {
         padding: 1rem 5%;
     }
+
     .navbar a {
         margin-left: 1.5rem;
         font-size: 1rem;
     }
+
     .container h1 {
         font-size: 2.2rem;
     }
+
     .texto1 {
         font-size: 1.2rem;
     }
+
     .album-image {
         width: 220px;
     }
+
     .formulario {
         width: 90%;
     }
@@ -326,6 +290,10 @@ button[type="submit"]:hover {
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.8);
         width: 100%;
+    }
+
+    .navbar a {
+        margin: 0.5rem 0;
     }
 
     .imagem-centralizada {
@@ -406,8 +374,7 @@ button[type="submit"]:hover {
     }
 }
 
-/* Botão hambúrguer para menu responsivo */
-.menu-toggle, #menu-icon {
+.menu-toggle {
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -417,7 +384,7 @@ button[type="submit"]:hover {
     z-index: 101;
 }
 
-.menu-toggle span, #menu-icon span {
+.menu-toggle span {
     display: block;
     height: 3px;
     width: 100%;
@@ -425,48 +392,140 @@ button[type="submit"]:hover {
     border-radius: 2px;
 }
 
-/* Animação para o botão menu quando ativo */
+/* Estilo ativo do menu (quando clicado) */
 .menu-toggle.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
+
 .menu-toggle.active span:nth-child(2) {
     opacity: 0;
 }
+
 .menu-toggle.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Estilo para navbar ativa em mobile */
-.navbar.active {
-    display: flex;
-    opacity: 1;
-    transform: translateY(0);
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .navbar {
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .navbar.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+
+    .navbar a {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
 }
 
-/* Estilo do botão voltar ao topo */
-#topBtn {
-    display: none;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 99;
-    font-size: 22px;
-    border: none;
-    outline: none;
-    background-color: rgb(110, 190, 110);
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-    animation: pulse 2s infinite;
-}
+
 
 #topBtn:hover {
     background-color: rgb(85, 160, 85);
 }
 
-/* Modal de boas-vindas */
+#menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 101;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 10%;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar a {
+        margin: 1rem 0;
+    }
+}
+
+#menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 101;
+}
+
+#menu-icon span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 10%;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        width: 200px;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+    }
+}
+
 #welcome-modal {
     position: fixed;
     top: 0;
@@ -516,7 +575,6 @@ button[type="submit"]:hover {
     background-color: rgb(85, 160, 85);
 }
 
-/* Animação de entrada */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -528,7 +586,6 @@ button[type="submit"]:hover {
     }
 }
 
-/* Animação de pulso */
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -543,3 +600,30 @@ button[type="submit"]:hover {
         box-shadow: 0 0 0 0 rgba(110, 190, 110, 0);
     }
 }
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    background-color: rgb(110, 190, 110);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+body {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+} 
