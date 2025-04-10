@@ -1,23 +1,26 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Declara que o documento segue o padrão HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eminem</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante a responsividade da página -->
+  <title>Eminem</title> <!-- Título que aparece na aba do navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo de estilo externo -->
 </head>
+
 <body>
+  <!-- Cabeçalho com logo e menu de navegação -->
   <header class="header">
+    <!-- Logo do site com possível destaque em verde -->
     <a href="#" class="logo">eminem<span class="titulo-verde"></span></a>
     
-    <!-- Ícone do menu hambúrguer -->
+    <!-- Ícone do menu hambúrguer (usado para navegação em dispositivos móveis) -->
     <div id="menu-icon" class="menu-toggle">
       <span></span>
       <span></span>
       <span></span>
     </div>
 
-    <!-- Navbar -->
+    <!-- Menu de navegação com links para outras páginas do site -->
     <nav class="navbar">
       <a href="index.html">Início</a>
       <a href="música.html">Músicas</a>
@@ -26,21 +29,27 @@
     </nav>
   </header>
 
+  <!-- Seção principal da página -->
   <section class="container">
+    <!-- Vídeo de fundo com reprodução automática e sem som -->
     <div class="video-background">
       <video autoplay loop muted playsinline class="back-video">
         <source src="5466776-hd_1920_1080_25fps (1).mp4" type="video/mp4">
       </video>
     </div>
 
+    <!-- Título da seção de álbuns -->
     <h1>Principais álbuns</h1>
 
+    <!-- Container com os álbuns -->
     <div class="album-container">
       <!-- ÁLBUM 1 -->
       <div class="album">
+        <!-- Link para ouvir o álbum no Spotify -->
         <a href="https://open.spotify.com/intl-pt/album/6t7956yu5zYf5A829XRiHC" target="_blank">
-          <img src="the_marshall.jpg" alt="Álbum 1 de Eminem" class="album-image">
+          <img src="the_marshall.jpg" alt="Álbum 1 de Eminem" class="album-image"> <!-- Imagem do álbum -->
         </a>
+        <!-- Descrição abaixo da imagem -->
         <p class="album-caption">Álbum polêmico e marcante que consolidou Eminem como um dos maiores do rap.</p>
       </div>
 
@@ -61,25 +70,21 @@
       </div>
     </div>
 
-    <div class="videofoda">
+    <!-- Seção destacando a música mais famosa -->
+    <div class="melhormusica">
       <h1>Música mais famosa</h1>
+
+      <!-- Bloco com imagem e link da música -->
       <div class="album">
         <a href="https://open.spotify.com/intl-pt/track/77Ft1RJngppZlq59B6uP0z?si=476c87f593ed44ab" target="_blank">
-          <img src="lose_yourself.jpg" alt="Eminem - Lose Yourself" class="album-image">
+          <img src="lose_yourself.jpg" alt="Eminem - Lose Yourself" class="album-image"> <!-- Imagem da música -->
         </a>
         <p class="album-caption">Uma das músicas mais icônicas de Eminem, vencedora do Oscar e símbolo de superação.</p>
       </div>
     </div>
   </section>
 
-  <!-- JavaScript -->
+  <!-- Importa o JavaScript responsável pelo menu responsivo e outras interações -->
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-https://open.spotify.com/intl-pt/track/77Ft1RJngppZlq59B6uP0z?si=476c87f593ed44ab

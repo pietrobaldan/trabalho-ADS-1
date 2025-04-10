@@ -1,23 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Declara que o documento está no padrão HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma do site como português do Brasil -->
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eminem</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+  <title>Eminem</title> <!-- Título da aba do navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Linka o arquivo de estilos CSS externo -->
 </head>
+
 <body>
+  <!-- Cabeçalho do site -->
   <header class="header">
+    <!-- Logo do site com destaque em verde -->
     <a href="#" class="logo">Eminem <span class="titulo-verde">Shady</span></a>
 
-    <!-- Ícone do menu hambúrguer -->
+    <!-- Ícone do menu hambúrguer (para navegação em dispositivos móveis) -->
     <div id="menu-icon" class="menu-toggle">
       <span></span>
       <span></span>
       <span></span>
     </div>
 
-    <!-- Navbar -->
+    <!-- Menu de navegação com links para outras páginas -->
     <nav class="navbar">
       <a href="index.html">Início</a>
       <a href="música.html">Músicas</a>
@@ -26,31 +30,43 @@
     </nav>
   </header>
 
+  <!-- Seção principal do conteúdo -->
   <section class="container">
+    <!-- Vídeo de fundo em loop, silencioso e automático -->
     <div class="video-background">
       <video autoplay loop muted playsinline class="back-video">
         <source src="5466776-hd_1920_1080_25fps (1).mp4" type="video/mp4">
       </video>
     </div>
+
+    <!-- Título principal da biografia -->
     <h1 class="bio">Biografia de Eminem</h1>
 
+    <!-- Subtítulo sobre a infância de Eminem -->
     <h2 class="titulo-verde">🧒 Infância</h2>
     <p class="texto1">
+      <!-- Texto descrevendo sua infância difícil -->
       Marshall Bruce Mathers III nasceu em 17 de outubro de 1972, no Missouri, e foi criado nos arredores de Detroit. Cresceu em um ambiente difícil, enfrentando bullying, pobreza e problemas familiares. Sua mãe o criou sozinha, e sua infância complicada acabou influenciando grande parte de suas letras no futuro.
     </p>
 
+    <!-- Subtítulo sobre o início da carreira -->
     <h2 class="titulo-verde">🎤 Início da Carreira</h2>
     <p class="texto1">
+      <!-- Texto sobre sua descoberta e ascensão -->
       Eminem começou sua trajetória nas batalhas de rap em Detroit, se destacando com seu estilo único e rimas rápidas. Em 1999, foi descoberto por Dr. Dre, que produziu seu primeiro grande álbum, <em>The Slim Shady LP</em>. O disco foi um sucesso imediato e marcou o início de uma carreira que mudaria o cenário do rap.
     </p>
 
+    <!-- Subtítulo sobre sua carreira de sucesso -->
     <h2 class="titulo-verde">🚀 Carreira</h2>
     <p class="texto1">
+      <!-- Texto sobre os principais álbuns e trajetória -->
       Com álbuns como <em>The Marshall Mathers LP</em> e <em>The Eminem Show</em>, Eminem se tornou um dos rappers mais influentes da história. Suas letras sinceras, muitas vezes polêmicas, abordam temas como vício, conflitos pessoais e críticas sociais. Ele também atuou no filme <em>8 Mile</em>, que conta uma versão ficcional de sua vida.
     </p>
 
+    <!-- Subtítulo com curiosidades sobre o artista -->
     <h2 class="titulo-verde">💡 Curiosidades</h2>
     <p class="texto1">
+      <!-- Lista de curiosidades em formato de parágrafo com quebras de linha -->
       - O nome "Eminem" vem das iniciais de seu nome: M&M (Marshall Mathers).<br>
       - É o rapper com mais álbuns vendidos na história.<br>
       - Venceu um Oscar com a música “Lose Yourself”, trilha do filme <em>8 Mile</em>.<br>
@@ -58,13 +74,20 @@
     </p>
   </section>
 
+  <!-- Seção adicional com mapa -->
   <section class="map-section">
     <h2 class="map-title">Localização da cidade onde Eminem cresceu</h2>
+    
+    <!-- Mapa incorporado do Google Maps mostrando Detroit -->
     <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95244.44463521918!2d-83.1653133!3d42.3528198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b2c0f7c9cdd7d%3A0x4ec8b9159776fd23!2sDetroit%2C%20MI%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1732130000000!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95244.44463521918!2d-83.1653133!3d42.3528198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b2c0f7c9cdd7d%3A0x4ec8b9159776fd23!2sDetroit%2C%20MI%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1732130000000!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
   </section>
 
+  <!-- Script JavaScript para o menu e funcionalidades -->
   <script src="script.js"></script>
 </body>
 </html>

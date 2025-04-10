@@ -1,23 +1,27 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma principal da página como português do Brasil -->
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eminem</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres para suportar acentuação -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo em dispositivos móveis -->
+  <title>Eminem</title> <!-- Título da aba do navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo de estilos CSS externo -->
 </head>
+
 <body>
+  <!-- Cabeçalho da página contendo o logotipo e o menu -->
   <header class="header">
+    <!-- Logotipo do site com destaque opcional em verde -->
     <a href="#" class="logo">Eminem<span class="titulo-verde"></span></a>
     
-    <!-- Ícone do menu hambúrguer -->
+    <!-- Ícone do menu hambúrguer, usado para navegação em telas pequenas -->
     <div id="menu-icon" class="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span> <!-- Linha 1 do hambúrguer -->
+      <span></span> <!-- Linha 2 -->
+      <span></span> <!-- Linha 3 -->
     </div>
 
-    <!-- Navbar -->
+    <!-- Barra de navegação com os links do site -->
     <nav class="navbar">
       <a href="index.html">Início</a>
       <a href="música.html">Músicas</a>
@@ -26,37 +30,36 @@
     </nav>
   </header>
 
-  <!-- Conteúdo da página continua abaixo -->
+  <!-- Seção principal com fundo em vídeo e introdução -->
+  <section class="container">
+    <!-- Vídeo de fundo em loop e sem som -->
+    <div class="video-background">
+      <video autoplay loop muted playsinline class="back-video">
+        <source src="5466776-hd_1920_1080_25fps (1).mp4" type="video/mp4">
+      </video>
+    </div>
 
+    <!-- Título principal com destaque no nome do artista -->
+    <h1>Bem-vindo ao universo de <span class="nome-vermelho">Eminem</span></h1>
 
-    <section class="container">
-        <div class="video-background">
-            <video autoplay loop muted playsinline class="back-video">
-                <source src="5466776-hd_1920_1080_25fps (1).mp4" type="video/mp4">
-            </video>
-        </div>
-        <h1>Bem-vindo ao universo de <span class="nome-vermelho">Eminem</span></h1>
-        <p class="texto1">
-          Conhecido mundialmente como um dos maiores nomes do rap, Eminem ultrapassou barreiras, quebrou recordes e deu voz a uma geração. Com letras intensas, batidas marcantes e uma história de superação única, Marshall Bruce Mathers III conquistou o mundo com autenticidade e atitude.
-        </p>
-        <p class="texto1">
-          Neste site, você vai explorar sua trajetória, discografia, curiosidades e muito mais. Prepare-se para mergulhar na mente por trás de sucessos como <em>"Lose Yourself"</em>, <em>"Stan"</em> e <em>"Not Afraid"</em>.
-        </p>
-        <div class="imagem-centralizada">
-            <img src="eminem1.jpg" >
-            <img src="eminem2.jpg" >
-            <img src="eminem11.jpg" >
-        </div>
-    </section>
+    <!-- Parágrafos introdutórios com a proposta do site -->
+    <p class="texto1">
+      Conhecido mundialmente como um dos maiores nomes do rap, Eminem ultrapassou barreiras, quebrou recordes e deu voz a uma geração. Com letras intensas, batidas marcantes e uma história de superação única, Marshall Bruce Mathers III conquistou o mundo com autenticidade e atitude.
+    </p>
 
-    <!-- ... (todo o conteúdo continua igual) ... -->
+    <p class="texto1">
+      Neste site, você vai explorar sua trajetória, discografia, curiosidades e muito mais. Prepare-se para mergulhar na mente por trás de sucessos como <em>"Lose Yourself"</em>, <em>"Stan"</em> e <em>"Not Afraid"</em>.
+    </p>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-</body>
-</html>
+    <!-- Galeria de imagens centralizadas do Eminem -->
+    <div class="imagem-centralizada">
+      <img src="eminem1.jpg" alt="Eminem em performance">
+      <img src="eminem2.jpg" alt="Eminem em estúdio">
+      <img src="eminem11.jpg" alt="Eminem em close artístico">
+    </div>
+  </section>
 
-
-
+  <!-- Importação do script JavaScript para o menu e funcionalidades interativas -->
+  <script src="script.js"></script>
 </body>
 </html>

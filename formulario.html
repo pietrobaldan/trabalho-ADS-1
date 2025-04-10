@@ -1,54 +1,71 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Declara o tipo de documento como HTML5 -->
+<html lang="pt-br"> <!-- Define o idioma do documento como português do Brasil -->
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eminem</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8, que suporta acentos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+  <title>Eminem</title> <!-- Título da aba do navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo de estilos CSS -->
 </head>
+
 <body>
+  <!-- Início do cabeçalho -->
   <header class="header">
+    <!-- Logo do site, com destaque em verde -->
     <a href="#" class="logo">Eminem<span class="titulo-verde"></span></a>
     
+    <!-- Ícone do menu para dispositivos móveis (menu hambúrguer) -->
     <div id="menu-icon" class="menu-toggle">
       <span></span>
       <span></span>
       <span></span>
     </div>
 
+    <!-- Navegação do site com links para outras páginas -->
     <nav class="navbar">
-      <a href="index.html">Início</a>
-      <a href="música.html">Músicas</a>
-      <a href="biografia.html">Sobre</a>
-      <a href="formulario.html">Questionário</a>
+      <a href="index.html">Início</a> <!-- Link para a página inicial -->
+      <a href="música.html">Músicas</a> <!-- Link para a página de músicas -->
+      <a href="biografia.html">Sobre</a> <!-- Link para a página de biografia -->
+      <a href="formulario.html">Questionário</a> <!-- Link para o formulário -->
     </nav>
   </header>
+  <!-- Fim do cabeçalho -->
 
+  <!-- Início da seção principal do conteúdo -->
   <section class="container">
+    
+    <!-- Vídeo de fundo (background) com reprodução automática, sem som e em loop -->
     <div class="video-background">
       <video autoplay loop muted playsinline class="back-video">
-        <source src="5466776-hd_1920_1080_25fps (1).mp4" type="video/mp4">
+        <source src="5466776-hd_1920_1080_25fps (1).mp4" type="video/mp4"> <!-- Fonte do vídeo -->
       </video>
     </div>
 
+    <!-- Título principal da página -->
     <h1>Questionário</h1>
 
+    <!-- Início do formulário -->
     <form action="#" method="POST" class="formulario">
+      
+      <!-- Campo de entrada para nome -->
       <div class="form-group">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+        <label for="nome">Nome:</label> <!-- Rótulo do campo -->
+        <input type="text" id="nome" name="nome" required> <!-- Campo obrigatório -->
       </div>
 
+      <!-- Campo de entrada para e-mail -->
       <div class="form-group">
         <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required> <!-- Campo do tipo email -->
       </div>
 
+      <!-- Área de texto para mensagem -->
       <div class="form-group">
         <label for="mensagem">Mensagem:</label>
         <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
       </div>
 
+      <!-- Campo select para escolher álbum favorito -->
       <div class="form-group">
         <label for="album">Qual é o seu álbum favorito do Eminem?</label>
         <select id="album" name="album" required>
@@ -60,8 +77,10 @@
         </select>
       </div>
 
+      <!-- Grupo de botões do tipo rádio para escolher estilo de música preferido -->
       <div class="form-group">
         <label for="estilo">Qual estilo de música você prefere?</label>
+        <!-- Cada opção de estilo -->
         <input type="radio" id="rap" name="estilo" value="Rap" required>
         <label for="rap">Rap</label>
         <input type="radio" id="hiphop" name="estilo" value="Hip-Hop">
@@ -70,15 +89,21 @@
         <label for="melodico">Melódico</label>
       </div>
 
+      <!-- Comentários adicionais (opcional) -->
       <div class="form-group">
         <label for="comentarios">Comentários adicionais:</label>
         <textarea id="comentarios" name="comentarios" rows="4"></textarea>
       </div>
 
+      <!-- Botão para enviar o formulário -->
       <button type="submit" class="btn-submit">Enviar</button>
     </form>
-  </section>
+    <!-- Fim do formulário -->
 
+  </section>
+  <!-- Fim da seção principal -->
+
+  <!-- Inclusão do arquivo JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
